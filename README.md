@@ -18,3 +18,6 @@ This model takes input from the webcam of your computer and, at each timestep, p
 - Uses the extracted HOG features as input to a **trained Support Vector Machine (SVM) model** to classify the gesture.  
 
 This model enables real-time hand gesture recognition for various applications.
+
+-Also make sure that you have installed all the libraries required to run the code some of the libraries are listed below:-
+OpenCv ,Matplotlib ,sklearn ,joblib
