@@ -1,6 +1,17 @@
 Methodology
-This model is taking input from the webcam of your computer and then at each timestep:-
-1.It pre-process the image to remove noises and crop image to take only region which is of interest to us.
-2.Detect edges of hand by using Canny's Edge Detection.
-3.Apply HOG(Histogram Of Oriented Gradients) to extract useful features from edge detected image.
-4.Use extracted features to predict gesture by trained SVM model.
+This model takes input from the webcam of your computer and, at each timestep, performs the following steps:
+
+Pre-processing:
+
+Removes noise from the image.
+Crops the image to focus only on the region of interest (hand area).
+Edge Detection:
+
+Uses Canny’s Edge Detection to identify the boundaries of the hand.
+Feature Extraction:
+
+Applies Histogram of Oriented Gradients (HOG) to extract useful features from the edge-detected image.
+Gesture Prediction:
+
+Uses the extracted HOG features as input to a trained Support Vector Machine (SVM) model to classify the gesture.
+This model enables real-time hand gesture recognition for various applications.
